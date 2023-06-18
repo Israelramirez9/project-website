@@ -17,22 +17,19 @@ aside {
     border: 1px solid rgba(181, 178, 178, 0.5);
     border-top: 0;
     width: 5rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 aside header {
-    margin-top:1rem;
-    padding: 1rem;
+    padding: 1.2rem 20%;
 }
 header a img{
-    width: 3rem;
-    height: 3rem;
+    width: 100%;
+    height: 100%;
 }
-
-
-
 aside ul {
     list-style: none;
     display: flex;
@@ -73,7 +70,7 @@ aside [class*=" bi-"]::before {
 }
 
 .power-off {
-    padding: 1.5rem;
+    padding: 20%;
 }
 .power-off button {
     border: none;
@@ -94,7 +91,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    margin:0 13% 0 0;      
+    margin:0 5% 0 0;      
 }
 nav i {
     color: black;
@@ -109,7 +106,7 @@ article {
     height: 100%;    
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow: auto;    
     background: rgb(106, 174, 255);
     background: linear-gradient(343deg, rgba(106, 174, 255, 1) 0%, rgba(181, 224, 254, 1) 17%, rgba(254, 254, 254, 1) 71%);
 }
@@ -130,7 +127,7 @@ h1 {
 
 .icons-format {
     list-style: none;
-    margin: auto 12% auto 0;
+    margin: auto 4% auto 0;
     width: 4rem;
     padding: 0;
     height: 2rem;
@@ -165,17 +162,15 @@ article .bi {
 .users {
     display: grid;
     gap: 3rem;
-    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
-    height: 100%;
-    width: 90%;
-    margin: 0;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    height: 100%;    
+    margin: 2rem 0;
     padding: 1.5rem;
 
 }
 
-.card {
-    width: 17rem;
-    height: 13rem;
+.card {   
+    height: 16rem;
     margin: 1rem;
     border-radius: 1rem;
     display: flex;
@@ -193,7 +188,7 @@ transform: scale(1.1);
     box-shadow: 0 0.5rem 0.5rem rgba(8, 127, 167, 0.5);
 }
 .card-header{
-    height: 45%;
+    height: 50%;
     width: 100%;
     position: relative;
     border-top-left-radius: 1rem;
@@ -204,35 +199,38 @@ transform: scale(1.1);
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("./imagenes/juegodeajedrez.avif");
-    background-size: 18rem;    
+    background-image: url("./imagenes/juegodeajedrez.avif");        
+}
+.card-header-image img{
+   width: 100%;
+   
 }
 
-.card-header p {
-    top:50%;
+.card-header h3 {
+    top:60%;
     position: relative;
     color: white;
     font-weight: 900;
 }
 
-.info {
+.card-info {
     margin-top: 4%;
-    height: 55%;
+    height: 50%;
     width: 100%;
 }
 
-.info p {
-    padding: 0.1rem 0.1rem 0.1rem 0.5rem;
+.card-info p {
+    padding: 0.1rem 0.1rem 0.1rem 1rem;
     font-size: small;
     text-align: left;
 
 }
 
-.info>p {
+.card-info>p {
     margin-top: 0.5rem;
 }
 
-.info i {
+.card-info i {
     color: rgb(3, 109, 231);
 }
 
@@ -241,8 +239,8 @@ transform: scale(1.1);
     background-color: bisque;
     z-index: 10;
     border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
+    width: 8.25rem;
+    height: 8.25rem;
     top: -3rem;
     border: 0.25rem solid white;
     background-image: url("./imagenes/profilePhoto.jpg");

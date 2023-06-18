@@ -26,10 +26,12 @@ aside {
 aside header {
     padding: 1.2rem 20%;
 }
-header a img{
+
+header a img {
     width: 100%;
     height: 100%;
 }
+
 aside ul {
     list-style: none;
     display: flex;
@@ -50,7 +52,7 @@ aside li:nth-child(3) {
     background-color: rgba(0, 89, 255, 0.25);
 }
 
-aside li:nth-child(3) i {
+aside li:nth-child(3) button {
     color: rgba(0, 89, 255, 0.5);
 }
 
@@ -72,41 +74,48 @@ aside [class*=" bi-"]::before {
 .power-off {
     padding: 20%;
 }
+
 .power-off button {
     border: none;
     background: none;
 }
+
 section {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
-nav {       
-    border-bottom: 1px solid rgba(181, 178, 178, 0.5);    
+
+nav {
+    border-bottom: 1px solid rgba(181, 178, 178, 0.5);
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 1.5rem;
 }
+
 nav ul {
     list-style: none;
     display: flex;
-    margin:0 5% 0 0;      
+    margin: 0 5% 0 0;
 }
-nav i {
+
+nav .bi {
     color: black;
 }
-nav button{
-    background:none;
+
+nav button {
+    background: none;
     border: none;
     height: 100%;
 }
+
 article {
     width: 100%;
-    height: 100%;    
+    height: 100%;
     display: flex;
     flex-direction: column;
-    overflow: auto;    
+    overflow: auto;
     background: rgb(106, 174, 255);
     background: linear-gradient(343deg, rgba(106, 174, 255, 1) 0%, rgba(181, 224, 254, 1) 17%, rgba(254, 254, 254, 1) 71%);
 }
@@ -128,12 +137,7 @@ h1 {
 .icons-format {
     list-style: none;
     margin: auto 4% auto 0;
-    width: 4rem;
     padding: 0;
-    height: 2rem;
-    color: rgb(116, 112, 112);
-    font-weight: 900;
-    font-size: xx-large;
     border: 1px solid rgba(0, 89, 255, 0.5);
     border-radius: 0.5rem;
     display: flex;
@@ -141,35 +145,35 @@ h1 {
 
 .icons-format li {
     width: 100%;
-    position: relative;
 }
 
-.icons-format li:nth-child(1) {
+.icons-format li:nth-child(1) button {
     background-color: rgba(0, 89, 255, 0.25);
     border-radius: 0.5rem;
     border: 1px solid rgba(0, 89, 255, 0.5);
 }
 
 article .bi {
-        font-size: 1rem;    
+    font-size: 1rem;
 }
-.icons-format button{
-    position: relative;
-    top:-0.8rem;
+
+.icons-format button {
     border: none;
     background: none;
+    padding: 0.5rem;
 }
+
 .users {
     display: grid;
     gap: 3rem;
     grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-    height: 100%;    
+    height: 100%;
     margin: 2rem 0;
     padding: 1.5rem;
 
 }
 
-.card {   
+.card {
     height: 16rem;
     margin: 1rem;
     border-radius: 1rem;
@@ -181,13 +185,15 @@ article .bi {
 }
 
 .card:hover .card-profile-photo,
-.card:hover .card-header-image{
-transform: scale(1.1);
+.card:hover .card-header-image {
+    transform: scale(1.1);
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 0 0.5rem 0.5rem rgba(8, 127, 167, 0.5);
 }
-.card-header{
+
+.card-header {
     height: 50%;
     width: 100%;
     position: relative;
@@ -195,19 +201,21 @@ transform: scale(1.1);
     border-top-right-radius: 1rem;
     overflow: hidden;
 }
+
 .card-header-image {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("./imagenes/juegodeajedrez.avif");        
+    background-image: url("./imagenes/juegodeajedrez.avif");
 }
-.card-header-image img{
-   width: 100%;
-   
+
+.card-header-image img {
+    width: 100%;
+
 }
 
 .card-header h3 {
-    top:60%;
+    top: 60%;
     position: relative;
     color: white;
     font-weight: 900;
@@ -230,7 +238,7 @@ transform: scale(1.1);
     margin-top: 0.5rem;
 }
 
-.card-info i {
+.card-info .bi {
     color: rgb(3, 109, 231);
 }
 

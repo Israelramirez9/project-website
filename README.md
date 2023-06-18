@@ -1,1 +1,1 @@
-link(https://github.com/Israelramirez9/project-website.git);
+link(https://israelramirez9.github.io/project-website/);

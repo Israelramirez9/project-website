@@ -23,13 +23,14 @@ aside {
 }
 
 aside header {
-    height: 3rem;
-    margin: 1.5rem 0;
-    background-image: url("./imagenes/sofex_logo.png");
-    background-size: 4rem;
-    background-position: center;
-
+    margin-top:1rem;
+    padding: 1rem;
 }
+header a img{
+    width: 3rem;
+    height: 3rem;
+}
+
 
 
 aside ul {
@@ -37,11 +38,11 @@ aside ul {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 4rem 0 0 0;
+    margin: 1.5rem 0 0 0;
 }
 
 aside li {
-    margin: 2rem auto;
+    margin: 1rem auto;
     height: 2.5rem;
     width: 2.5rem;
     position: relative;
@@ -56,7 +57,7 @@ aside li:nth-child(3) i {
     color: rgba(0, 89, 255, 0.5);
 }
 
-aside button {
+aside li button {
     background: none;
     border: none;
     position: absolute;
@@ -72,55 +73,40 @@ aside [class*=" bi-"]::before {
 }
 
 .power-off {
-    height: 3rem;
+    padding: 1.5rem;
 }
-
+.power-off button {
+    border: none;
+    background: none;
+}
 section {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-
-
 }
-
-nav {
-    height: 4rem;
-    width: 100%;
-    border-bottom: 1px solid rgba(181, 178, 178, 0.5);
-    ;
+nav {       
+    border-bottom: 1px solid rgba(181, 178, 178, 0.5);    
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1.5rem;
 }
-
-nav div {
-    width: 2rem;
-    margin: auto 4rem;
-    padding: 0;
-}
-
 nav ul {
     list-style: none;
     display: flex;
-    padding: 0;
-    margin: auto 12% auto 0;
-    width: 4rem;
+    margin:0 13% 0 0;      
 }
-
-nav ul li {
-    width: 100%;
-    margin: 0 0 0 0 auto;
-}
-
 nav i {
     color: black;
 }
-
+nav button{
+    background:none;
+    border: none;
+    height: 100%;
+}
 article {
     width: 100%;
-    height: 100%;
-    padding: 0 0 0 4rem;
+    height: 100%;    
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -129,7 +115,10 @@ article {
 }
 
 article header {
-    padding: 1.5rem 0;
+    padding: 1.5rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 h1 {
@@ -141,7 +130,7 @@ h1 {
 
 .icons-format {
     list-style: none;
-    margin: auto 15% auto 0;
+    margin: auto 12% auto 0;
     width: 4rem;
     padding: 0;
     height: 2rem;
@@ -165,19 +154,14 @@ h1 {
 }
 
 article .bi {
+        font-size: 1rem;    
+}
+.icons-format button{
     position: relative;
-    font-size: 1rem;
-    top: -1rem;
+    top:-0.8rem;
+    border: none;
+    background: none;
 }
-
-section header {
-
-    width: 100%;
-    height: 7rem;
-    display: flex;
-    justify-content: space-between;
-}
-
 .users {
     display: grid;
     gap: 3rem;
@@ -185,7 +169,7 @@ section header {
     height: 100%;
     width: 90%;
     margin: 0;
-    padding: 2rem 0 0 0;
+    padding: 1.5rem;
 
 }
 
@@ -198,27 +182,42 @@ section header {
     flex-direction: column;
     position: relative;
     align-items: center;
-    box-shadow: 0 0.5rem 0.5rem rgba(11, 112, 170, 0.5);
+    box-shadow: 0 0.5rem 0.5rem rgba(185, 188, 189, 0.3);
 }
 
-.background-img {
+.card:hover .card-profile-photo,
+.card:hover .card-header-image{
+transform: scale(1.1);
+}
+.card:hover{
+    box-shadow: 0 0.5rem 0.5rem rgba(8, 127, 167, 0.5);
+}
+.card-header{
     height: 45%;
     width: 100%;
-    background-image: url("./imagenes/juegodeajedrez.avif");
-    background-size: 18rem;
-    border-top-right-radius: 1rem;
+    position: relative;
     border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden;
+}
+.card-header-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./imagenes/juegodeajedrez.avif");
+    background-size: 18rem;    
 }
 
-.background-img p {
-    margin-top: 25%;
+.card-header p {
+    top:50%;
+    position: relative;
     color: white;
     font-weight: 900;
 }
 
 .info {
     margin-top: 4%;
-    height: 50%;
+    height: 55%;
     width: 100%;
 }
 
@@ -237,7 +236,7 @@ section header {
     color: rgb(3, 109, 231);
 }
 
-.profilephoto {
+.card-profile-photo {
     position: absolute;
     background-color: bisque;
     z-index: 10;
